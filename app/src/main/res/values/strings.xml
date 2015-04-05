@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cwiczenie2_UmawianieWizyt</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textView_wybierz_lekarza">Wybierz specjalnosc lekarza:</string>
+
+    <string name="cos"> tomek </string>
+
+    <string-array name="spec">
+        <item>rodzinny</item>
+        <item>chirurg</item>
+        <item>alergolog</item>
+        <item>pediatra</item>
+    </string-array>
+    <string name="title_activity_ekran2">Ekran2</string>
+    <string name="button_dalej_string">Dalej</string>
+    <string name="checkbox_pierwszaWizyta_string">Czy to jest pierwsza wizyta</string>
+    <string name="title_activity_ekran3">Ekran3</string>
+    <string name="title_activity_ekran4">Ekran4</string>
+
+</resources>

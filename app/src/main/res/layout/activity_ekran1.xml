@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Ekran1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_wybierz_lekarza"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="20dp"
+        android:height="20dp"
+        android:textColor="#ff060606" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_WyborSpecjalizacji"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView"
+        android:entries="@array/spec" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_dalej_string"
+        android:id="@+id/button_DalejEkran1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/spinner_WyborSpecjalizacji"
+        android:onClick="onDalejClicked" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_pierwszaWizyta_string"
+        android:id="@+id/checkBox_pierwszaWizyta"
+        android:layout_below="@+id/spinner_WyborSpecjalizacji"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spinner_WyborSpecjalizacji" />
+</RelativeLayout>
