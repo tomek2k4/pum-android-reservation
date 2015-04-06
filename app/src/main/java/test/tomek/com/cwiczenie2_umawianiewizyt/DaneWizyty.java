@@ -13,4 +13,12 @@ public class DaneWizyty implements Serializable {
     public Date dataDo;
     public String komentarz;
 
+    public void clear(){
+        specjalizacja = "";
+        czyPierwszyRaz = false;
+        dataDo = new Date();
+        dataDo = new Date();
+        komentarz = "";
+    }
+
 }

@@ -13,10 +13,14 @@
         <item>alergolog</item>
         <item>pediatra</item>
     </string-array>
-    <string name="title_activity_ekran2">Ekran2</string>
+    <string name="title_activity_ekran2">Wybierz terminy od-do</string>
     <string name="button_dalej_string">Dalej</string>
     <string name="checkbox_pierwszaWizyta_string">Czy to jest pierwsza wizyta</string>
-    <string name="title_activity_ekran3">Ekran3</string>
-    <string name="title_activity_ekran4">Ekran4</string>
+    <string name="title_activity_ekran3">Komentarz</string>
+    <string name="title_activity_ekran4">Podsumowanie</string>
+    <string name="title_activity_ekran1">Specjalista</string>
+    <string name="label_comments_text">Dadaj komentarz</string>
+    <string name="send_reservation_button_string">Rezerwuj</string>
+    <string name="reset_button_string">Reset</string>
 
 </resources>

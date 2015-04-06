@@ -10,25 +10,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="podsumowanie"
+        android:text=""
         android:id="@+id/podsumowanie"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_above="@+id/button2" />
+        android:layout_above="@+id/button_Rezerwuj" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
+        android:text="@string/send_reservation_button_string"
+        android:id="@+id/button_Rezerwuj"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="onSendButtonClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true" />
+        android:text="@string/reset_button_string"
+        android:id="@+id/button_Reset"
+        android:layout_alignParentBottom="true"
+        android:onClick="onResetButtonClick" />
 </RelativeLayout>
