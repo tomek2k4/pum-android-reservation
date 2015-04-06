@@ -54,7 +54,7 @@ public class Ekran4 extends ActionBarActivity {
 
         DaneWizyty dane = (DaneWizyty) getIntent().getSerializableExtra("dane");
         dane.clear();
-        SharedPreferences prefs = getPreferences(MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences("prefs",MODE_PRIVATE);
         prefs.edit().putString("comment","");
         prefs.edit().clear().apply();
 

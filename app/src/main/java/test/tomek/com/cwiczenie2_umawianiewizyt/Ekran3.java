@@ -11,14 +11,13 @@ import android.widget.EditText;
 
 public class Ekran3 extends ActionBarActivity {
 
-    private SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ekran3);
 
-        prefs = this.getPreferences(MODE_PRIVATE);
+        SharedPreferences prefs = this.getSharedPreferences("prefs",MODE_PRIVATE);
         String restoredText = prefs.getString("comment", null);
         if (restoredText != null){
             EditText commentTextEdit = (EditText) findViewById(R.id.editText_commentWindow);
@@ -32,6 +31,7 @@ public class Ekran3 extends ActionBarActivity {
         super.onStop();
         Log.d("Tomek","onStop invocked");
 
+        SharedPreferences prefs = this.getSharedPreferences("prefs",MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("comment", ((EditText)findViewById(R.id.editText_commentWindow)).getText().toString() );
         editor.apply();
